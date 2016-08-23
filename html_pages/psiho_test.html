@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Diagnoza agresivității</title>
+		<link rel="stylesheet" type="text/css" href="../style_files/style_ps2.css">
+		<link href="../img_files/favico.png" type="image/png" rel="shortcut icon" />
+		<link href="../img_files/favico2.png" type="image/png" rel="shortcut icon" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<script type="text/javascript" src="../script_files/script_ps2.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="dheader">
+				<div id="logo_header">
+					<a href="../index.html"><img src="../img_files/diagnoza_logo.png" alt="Logo-ul site-ului"></a>
+				</div>
+				<div id="text_header">
+					<p>PsihoTest</p>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<button class="meniu" id="meniu_princ">Meniu</button>
+			<ul id="meniu_l">
+				<li><a href="../index.html" class="dropbut">Home</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropbut">Diagnoza agresivității</a>
+					<div class="dropdown-continut">
+						<a href="despre_a.html">Despre agresivitate</a>
+						<a href="forme_a.html">Forme ale agresivității</a>
+						<a href="cauze_a.html">Cauze ale agresivității</a>
+						<a href="reducere_a.html">Reducerea agresivității</a>
+					</div>
+				</li>
+				<li><a href="psiho_test.html" class="dropbut">PsihoTest</a></li>
+				<li><a href="contact.html" class="dropbut">Contact</a></li>
+			</ul>
+		</nav>
+		<section>
+			<div id="text_continut">
+				<p id="txt">
+					Agresivitatea intră în sfera afectivă a oricărei persoane, însă gradul de intensitate, formele și cauzele comportamentului agresiv diferă de la o persoană la alta.
+				</p>
+				<p id="txt">
+					Testul de agresivitate - Aggression Questionare este conceput pentru a determina cât de agresivă este o persoană și modul în care se monifestă agresivitatea sa. A fost dezvoltat în 1992, fiind o adaptare a Inventarului de ostilitate - Buss-Durkee (BDHI; Buss-Durkee-1957).
+				</p>
+				<p id="txt">
+					Arnold H. Buss și Mark Perry au interpretat agresivitatea după patru caracteristici, chestionarul folosind un model multidimensional de evaluare cu ajutorul a patru subscale corespunzătoare celor patru caracteristici sau componente ale agresivității: agresivitate fizică, agresivitate verbală, furie și ostilitate. Sunt cuprinși în scală 29 de itemi cu limite cuprinse între 29 și 145, un scor mai mare reflectând un nivel mai mare de agresivitate. Descrierile manifestărilor asociate se potrivesc într-o măsură mai mare celor cu nivel ridicat de agresivitate.
+				</p>
+				<p id="txt">
+					Fiecare item este cotat pe o scară Lickert de la 1 (foarte necaracteristic pentru mine) la 5 (foarte caracteristic pentru mine). Vă rugăm să citiți cu atenție următoarele afirmații și să răspundeți onest alegând primul răspuns care vă vine în minte. 
+				</p>
+				<form id="ps_id" name="psihotest" action="psiho_test_rez.html">
+					<!--<fieldset>
+						<legend>Vă rugăm selectați sexul.</legend>
+						<input id="sex_1" type="radio" name="sex" value="Masculin" required>
+							<label for="sex_1">
+							Masculin
+							</label>
+							<br>
+						<input id="sex_2" type="radio" name="sex" value="Feminin" required>
+							<label for="sex_2">
+							Feminin
+							</label>
+							<br>
+					</fieldset>-->
+					<fieldset>
+						<legend>Vă rugăm selectați sexul.</legend>
+						<select id="sex" name="sex" form="ps_id" required>
+							<option value="" selected>-</option> 
+							<option value="Masculin">Masculin</option>
+							<option value="Feminin">Feminin</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>1.Mă enervez repede, dar îmi trece la fel de repede.</legend>
+						<input id="1_1" type="radio" name="q1" value="1" required>
+							<label for="1_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="1_2" type="radio" name="q1" value="2" required>
+							<label for="1_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="1_3" type="radio" name="q1" value="3" required>
+							<label for="1_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="1_4" type="radio" name="q1" value="4" required>
+							<label for="1_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="1_5" type="radio" name="q1" value="5" required>
+							<label for="1_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>2.Sunt momente în care nu-mi pot controla impulsul de a lovi pe cineva.</legend>
+						<input id="2_1" type="radio" name="q2" value="1" required>
+							<label for="2_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="2_2" type="radio" name="q2" value="2" required>
+							<label for="2_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="2_3" type="radio" name="q2" value="3" required>
+							<label for="2_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="2_4" type="radio" name="q2" value="4" required>
+							<label for="2_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="2_5" type="radio" name="q2" value="5" required>
+							<label for="2_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>3.Când nu sunt de acord cu prietenii, le spun deschis, în față.</legend>
+						<input id="3_1" type="radio" name="q3" value="1" required>
+							<label for="3_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="3_2" type="radio" name="q3" value="2" required>
+							<label for="3_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="3_3" type="radio" name="q3" value="3" required>
+							<label for="3_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="3_4" type="radio" name="q3" value="4" required>
+							<label for="3_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="3_5" type="radio" name="q3" value="5" required>
+							<label for="3_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>4.Sunt o persoană calmă.</legend>
+						<input id="4_1" type="radio" name="q4" value="5" required>
+							<label for="4_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="4_2" type="radio" name="q4" value="4" required>
+							<label for="4_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="4_3" type="radio" name="q4" value="3" required>
+							<label for="4_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="4_4" type="radio" name="q4" value="2" required>
+							<label for="4_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="4_5" type="radio" name="q4" value="1" required>
+							<label for="4_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>5.Uneori mă roade invidia.</legend>
+						<input id="5_1" type="radio" name="q5" value="1" required>
+							<label for="5_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="5_2" type="radio" name="q5" value="2" required>
+							<label for="5_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="5_3" type="radio" name="q5" value="3" required>
+							<label for="5_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="5_4" type="radio" name="q5" value="4" required>
+							<label for="5_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="5_5" type="radio" name="q5" value="5" required>
+							<label for="5_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>6.Când simt că sunt provocat/provocată, pot lovi o alta persoană.</legend>
+						<input id="6_1" type="radio" name="q6" value="1" required>
+							<label for="6_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="6_2" type="radio" name="q6" value="2" required>
+							<label for="6_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="6_3" type="radio" name="q6" value="3" required>
+							<label for="6_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="6_4" type="radio" name="q6" value="4" required>
+							<label for="6_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="6_5" type="radio" name="q6" value="5" required>
+							<label for="6_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>7.Realizez deseori că nu cunt de acord cu oamenii din jurul meu - mi se întâmplă des să mă contrazic cu ceilalți.</legend>
+						<input id="7_1" type="radio" name="q7" value="1" required>
+							<label for="7_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="7_2" type="radio" name="q7" value="2" required>
+							<label for="7_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="7_3" type="radio" name="q7" value="3" required>
+							<label for="7_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="7_4" type="radio" name="q7" value="4" required>
+							<label for="7_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="7_5" type="radio" name="q7" value="5" required>
+							<label for="7_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>8.Când nu-mi convine ceva, las să se vadă asta.</legend>
+						<input id="8_1" type="radio" name="q8" value="1" required>
+							<label for="8_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="8_2" type="radio" name="q8" value="2" required>
+							<label for="8_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="8_3" type="radio" name="q8" value="3" required>
+							<label for="8_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="8_4" type="radio" name="q8" value="4" required>
+							<label for="8_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="8_5" type="radio" name="q8" value="5" required>
+							<label for="8_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>9.Uneori simt că lucrurile nu merg cum vreau, că viața nu ține cu mine.</legend>
+						<input id="9_1" type="radio" name="q9" value="1" required>
+							<label for="9_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="9_2" type="radio" name="q9" value="2" required>
+							<label for="9_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="9_3" type="radio" name="q9" value="3" required>
+							<label for="9_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="9_4" type="radio" name="q9" value="4" required>
+							<label for="9_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="9_5" type="radio" name="q9" value="5" required>
+							<label for="9_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>10.Dacă cineva mă lovește, ripostez.</legend>
+						<input id="10_1" type="radio" name="q10" value="1" required>
+							<label for="10_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="10_2" type="radio" name="q10" value="2" required>
+							<label for="10_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="10_3" type="radio" name="q10" value="3" required>
+							<label for="10_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="10_4" type="radio" name="q10" value="4" required>
+							<label for="10_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="10_5" type="radio" name="q10" value="5" required>
+						<label for="10_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>11.Când cineva mă supără, pot să îi spun verde în față ce gândesc.</legend>
+						<input id="11_1" type="radio" name="q11" value="1" required>
+							<label for="11_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="11_2" type="radio" name="q11" value="2" required>
+							<label for="11_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="11_3" type="radio" name="q11" value="3" required>
+							<label for="11_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="11_4" type="radio" name="q11" value="4" required>
+							<label for="11_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="11_5" type="radio" name="q11" value="5" required>
+							<label for="11_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>12.Uneori mă simt ca un butoi gata să explodeze.</legend>
+						<input id="12_1" type="radio" name="q12" value="1" required>
+							<label for="12_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="12_2" type="radio" name="q12" value="2" required>
+							<label for="12_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="12_3" type="radio" name="q12" value="3" required>
+							<label for="12_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="12_4" type="radio" name="q12" value="4" required>
+							<label for="12_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="12_5" type="radio" name="q12" value="5" required>
+							<label for="12_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>13.Unii oameni par că se contolează întotdeauna, că își păstrează stăpânirea de sine.</legend>
+						<input id="13_1" type="radio" name="q13" value="1" required>
+							<label for="13_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="13_2" type="radio" name="q13" value="2" required>
+							<label for="13_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="13_3" type="radio" name="q13" value="3" required>
+							<label for="13_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="13_4" type="radio" name="q13" value="4" required>
+							<label for="13_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="13_5" type="radio" name="q13" value="5" required>
+							<label for="13_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>14.Sunt implicat/implicată în conflicte violente mai des decât majoritatea oamenilor.</legend>
+						<input id="14_1" type="radio" name="q14" value="1" required>
+							<label for="14_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="14_2" type="radio" name="q14" value="2" required>
+							<label for="14_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="14_3" type="radio" name="q14" value="3" required>
+							<label for="14_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="14_4" type="radio" name="q14" value="4" required>
+							<label for="14_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="14_5" type="radio" name="q14" value="5" required>
+							<label for="14_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>15.Nu pot să nu mă cert, când cineva nu-i de acord cu mine.</legend>
+						<input id="15_1" type="radio" name="q15" value="1" required>
+							<label for="15_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="15_2" type="radio" name="q15" value="2" required>
+							<label for="15_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="15_3" type="radio" name="q15" value="3" required>
+							<label for="15_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="15_4" type="radio" name="q15" value="4" required>
+							<label for="15_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="15_5" type="radio" name="q15" value="5" required>
+							<label for="15_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>16.Unii din prietenii mei mă consideră repezit/repezită.</legend>
+						<input id="16_1" type="radio" name="q16" value="1" required>
+							<label for="16_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>	
+						<input id="16_2" type="radio" name="q16" value="2" required>
+							<label for="16_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="16_3" type="radio" name="q16" value="3" required>
+							<label for="16_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="16_4" type="radio" name="q16" value="4" required>
+							<label for="16_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="16_5" type="radio" name="q16" value="5" required>
+							<label for="16_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>17.Uneori sunt lucruri care îmi lasă un gust amar.</legend>
+						<input id="17_1" type="radio" name="q17" value="1" required>
+							<label for="17_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="17_2" type="radio" name="q17" value="2" required>
+							<label for="17_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="17_3" type="radio" name="q17" value="3" required>
+							<label for="17_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="17_4" type="radio" name="q17" value="4" required>
+							<label for="17_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="17_5" type="radio" name="q17" value="5" required>
+							<label for="17_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>18.Dacă trebuie să recurg la violență pentru a-mi apăra drepturile, o fac.</legend>
+						<input id="18_1" type="radio" name="q18" value="1" required>
+							<label for="18_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="18_2" type="radio" name="q18" value="2" required>
+							<label for="18_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="18_3" type="radio" name="q18" value="3" required>
+							<label for="18_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="18_4" type="radio" name="q18" value="4" required>
+							<label for="18_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="18_5" type="radio" name="q18" value="5" required>
+							<label for="18_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>19.Prietenii îmi spun că sunt cam certăreț/certăreață.</legend>
+						<input id="19_1" type="radio" name="q19" value="1" required>
+							<label for="19_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="19_2" type="radio" name="q19" value="2" required>
+							<label for="19_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="19_3" type="radio" name="q19" value="3" required>
+							<label for="19_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="19_4" type="radio" name="q19" value="4" required>
+							<label for="19_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="19_5" type="radio" name="q19" value="5" required>
+							<label for="19_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>20.Uneori îmi ies din fire fără nici un motiv.</legend>
+						<input id="20_1" type="radio" name="q20" value="1" required>
+							<label for="20_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="20_2" type="radio" name="q20" value="2" required>
+							<label for="20_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="20_3" type="radio" name="q20" value="3" required>
+							<label for="20_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="20_4" type="radio" name="q20" value="4" required>
+							<label for="20_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="20_5" type="radio" name="q20" value="5" required>
+							<label for="20_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>21.Stiu că "prietenii" mă vorbesc pe la spate.</legend>
+						<input id="21_1" type="radio" name="q21" value="1" required>
+							<label for="21_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="21_2" type="radio" name="q21" value="2" required>
+							<label for="21_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="21_3" type="radio" name="q21" value="3" required>
+							<label for="21_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="21_4" type="radio" name="q21" value="4" required>
+							<label for="21_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="21_5" type="radio" name="q21" value="5" required>
+							<label for="21_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>22.Există persoane care m-au provocat atât de tare, încât am ajuns să le lovesc.</legend>
+						<input id="22_1" type="radio" name="q22" value="1" required>
+							<label for="22_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="22_2" type="radio" name="q22" value="2" required>
+							<label for="22_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="22_3" type="radio" name="q22" value="3" required>
+							<label for="22_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="22_4" type="radio" name="q22" value="4" required>
+							<label for="22_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="22_5" type="radio" name="q22" value="5" required>
+							<label for="22_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>23.Nu pot să îmi controlez temperamentul - întâmpin dificultăți în a-mi controla firea.</legend>
+						<input id="23_1" type="radio" name="q23" value="1" required>
+							<label for="23_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="23_2" type="radio" name="q23" value="2" required>
+							<label for="23_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="23_3" type="radio" name="q23" value="3" required>
+							<label for="23_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="23_4" type="radio" name="q23" value="4" required>
+							<label for="23_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="23_5" type="radio" name="q23" value="5" required>
+							<label for="23_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>24.Sunt suspicios/suspicioasă cu persoanele necunoscute prea "prietenoase" - față de oamenii necunoscuți care vor să pară prietenoși.</legend>
+						<input id="24_1" type="radio" name="q24" value="1" required>
+							<label for="24_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="24_2" type="radio" name="q24" value="2" required>
+							<label for="24_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="24_3" type="radio" name="q24" value="3" required>
+							<label for="24_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="24_4" type="radio" name="q24" value="4" required>
+							<label for="24_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="24_5" type="radio" name="q24" value="5" required>
+							<label for="24_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>25.Nu cred că există niciun motiv destul de serios pentru a lovi vreodată pe cineva.</legend>
+						<input id="25_1" type="radio" name="q25" value="5" required>
+							<label for="25_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="25_2" type="radio" name="q25" value="4" required>
+							<label for="25_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="25_3" type="radio" name="q25" value="3" required>
+							<label for="25_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="25_4" type="radio" name="q25" value="2" required>
+							<label for="25_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="25_5" type="radio" name="q25" value="1" required>
+							<label for="25_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>26.Uneori simt că oamenii râd de mine pe la spate.</legend>
+						<input id="26_1" type="radio" name="q26" value="1" required>
+							<label for="26_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="26_2" type="radio" name="q26" value="2" required>
+							<label for="26_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="26_3" type="radio" name="q26" value="3" required>
+							<label for="26_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="26_4" type="radio" name="q26" value="4" required>	
+							<label for="26_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="26_5" type="radio" name="q26" value="5" required>
+							<label for="26_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>27.Au existat situații în care am amenințat cunoscuți.</legend>
+						<input id="27_1" type="radio" name="q27" value="1" required>
+							<label for="27_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="27_2" type="radio" name="q27" value="2" required>
+							<label for="27_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="27_3" type="radio" name="q27" value="3" required>
+							<label for="27_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="27_4" type="radio" name="q27" value="4" required>
+							<label for="27_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="27_5" type="radio" name="q27" value="5" required>
+							<label for="27_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>28.Când oamenii sunt foarte amabili cu mine, mă întreb ce scopuri au defapt.</legend>
+						<input id="28_1" type="radio" name="q28" value="1" required>
+							<label for="28_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="28_2" type="radio" name="q28" value="2" required>
+							<label for="28_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="28_3" type="radio" name="q28" value="3" required>
+							<label for="28_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="28_4" type="radio" name="q28" value="4" required>
+							<label for="28_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="28_5" type="radio" name="q28" value="5" required>
+							<label for="28_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<fieldset>
+						<legend>29.Am devenit atât de furios/furioasă încât am distrus lucruri în jurul meu.</legend>
+						<input id="29_1" type="radio" name="q29" value="1" required>
+							<label for="29_1">
+							Foarte necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="29_2" type="radio" name="q29" value="2" required>
+							<label for="29_2">
+							Oarecum necaracteristic pentru mine
+							</label>
+							<br>
+						<input id="29_3" type="radio" name="q29" value="3" required>
+							<label for="29_3">
+							Puțin caracteristic pentru mine
+							</label>
+							<br>
+						<input id="29_4" type="radio" name="q29" value="4" required>
+							<label for="29_4">
+							Oarecum caracteristic pentru mine
+							</label>
+							<br>
+						<input id="29_5" type="radio" name="q29" value="5" required>
+							<label for="29_5">
+							Foarte caracteristic pentru mine
+							</label>
+							<br>
+					</fieldset>
+					<button type="submit">Vezi rezultate</button>
+				</form>	
+			</div>
+		</section>
+		<footer>
+			<p id="ref">Referințe:</p>
+			<p id="ref_l">	
+				1.Psychological Bulletin 1989 by the American Psychological Association, Vol. 106, No. 1 -Frustration-Aggression Hypothesis: Examination and Reformulation -Leonard Berkowitz<br>
+				2.Psihologie sociala-Agresivitatea-Nicolae Mitrofan-Polirom laşi, 1996<br>
+				3.Valori, atitudini şi comportamente sociale: teme actuale de psihosociologie -Petru lluţ. - laşi: Polirom, 2004<br>
+				4.Psihologie socială-Comportamentul agresiv-Curs-http://www.psih.uaic.ro<br>
+				5.Journal of Personality and Social Psychology 1992 by the American Psychological Association Vol. 63, No. 3<br>
+				6.The Aggression Questionare-Arnold H. Buss and Mark Perry<br>
+			</p>
+			<p id="c_r">
+				Copyright &copy; Ghimici Gabriel, 2016
+			</p>
+		</footer>
+	</body>
+</html>
